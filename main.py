@@ -18,10 +18,10 @@ print("|||||||||||  ||          ||  |||||||||||      //            \\\\  ||     
 print("~~~~~~~~~~~~~AnyalogbuEC~~~~~~~~~~~~~~~~     ~~~~~~~~~Bulk Sms Nigeria API~~~~~~~~~\n\n")
 
 # API token
-API_TOKEN = "gAzSWrbtLlPFmSLswzidzZFfRK0ks9JXgRc514gRLS0b5c0vo0Yrh9QSsEKZ"  # input("Enter API token from bulk sms Nigeria : ")
+API_TOKEN = input("Enter API token from bulk sms Nigeria : ")
 
 # setting sender's name
-From = "BulkSmsNigeria"  # input("Enter Sender's name: ")
+From = input("Enter Sender's name: ")
 
 successful = []  # list of phone numbers of the successfully sent sms
 unsuccessful = []  # list of phone numbers of the unsuccessfully sent sms
@@ -52,7 +52,7 @@ def message_sender(message, to):
 
 
 # taking the file that contains the contacts details
-contacts_details_file = "ContactsData.csv"  # input("Filename or Filepath for contact details:  ")
+contacts_details_file = input("Filename or Filepath for contact details:  ")
 
 if not contacts_details_file.endswith(".csv"):
     print("File type must be .csv")
@@ -68,7 +68,7 @@ except:
     quit()
 
 # taking the file that contains the message
-message_file = "Message.txt"  # input("Filename or Filepath for the message:  ")
+message_file = input("Filename or Filepath for the message:  ")
 
 if not message_file.endswith(".txt"):
     print("File type must be .txt")
